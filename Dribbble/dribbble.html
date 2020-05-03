@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dribbble</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style lang="scss">
+    .dribbble-shot-meta {
+      height: 38px;
+      transition: opacity 0.1s ease, height 0.2s ease;
+      opacity: 0;
+    }
+
+    .dribbble-shot:hover .dribbble-shot-meta{
+      height: 50px;
+      will-change: transition;
+      transition: opacity 0.1s ease, height 0.2s ease;
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-200 m-0">
